@@ -1,17 +1,19 @@
 
 package domain;
 
+import java.io.Serializable;
+
 /**
  *
  * @author 813116
  */
-public class Note {
+public class Note  implements Serializable{
     private String title;
     private String contents;
 
     public Note() {
-        title = "";
-        contents ="";
+        this.title = "";
+        this.contents ="";
     }
 
     public Note(String title, String contents) {
